@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Demolab</title>
+</head>
+<body>
+    <!-- Grilla -->
+    <div class="contenedor">
+        <!-- Encabezado -->
+        <header class="menu">
+            <div class="principal">
+                <a class="menu__logo" href="./index.html"><img src="./img/demolab-logo.png" alt="Logo Demo Lab"></a>
+                <nav class="principal">
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./pages/servicios.html">Servicios</a></li>
+                        <li><a href="./pages/materiales.html">Materiales</a></li>
+                        <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                        <li class="cotiza"><a href="./pages/cotiza.html">Cotiza</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="navbar navbar-dark bg-nav fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./index.html"><img src="./img/demolab-logo.png" alt="" height="50" class="d-inline-block align-text-top"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end bg-nav" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                      <a class="offcanvas-title" id="offcanvasDarkNavbarLabel" href="./index.html"><img src="./img/demolab-logo.png" alt="" height="40" class="d-inline-block align-text-top"></a>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/materiales.html">Materiales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/cotiza.html">Cotiza</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <!-- Contenido principal -->
+        <main class="portada">
+                <h1>Servicio de impresión 3D Online</h1>
+                <p>Crea y personaliza. Optimice y ahorre. Rompa las barreras del diseño y escale su negocio con los servicios de impresión 3D</p>
+                <div>
+                    <button class="portada__boton1"><a href="./pages/cotiza.html">Cotiza aquí</a></button>
+                    <button class="portada__boton2"><a href="./pages/nosotros.html">Contáctanos</a></button>
+                </div>
+        </main>
+        <!--  Sección imagen lateral -->
+        <section class="imagen">
+            <img src="./img/portada-principal.jpg" alt="">
+        </section>
+    </div>
+    <!--  segunda sección de inicio -->
+    <section class="proceso">
+        <div>
+            <img src="./img/upload.png" alt="">
+            <h3>1. Subir modelo 3D</h3>
+            <p>Carga cifrada para la protección de su propiedad intelectual</p>
+        </div>
+        <div>
+            <img src="./img/madera.png" alt="">
+            <h3>2. Seleccionar material</h3>
+            <p>Carga cifrada para la protección de su propiedad intelectual</p>
+        </div>
+        <div>
+            <img src="./img/cube.png" alt="">
+            <h3>3. Reciba sus piezas</h3>
+            <p>Carga cifrada para la protección de su propiedad intelectual</p>
+        </div>
+    </section>
+    <div class="boton">
+        <button><a href="./pages/cotiza.html">Cotice aquí</a>
+        </button>
+    </div>
+    <!--  footer -->
+    <footer>
+        <h4 class="subtitulo">Diseñado y desarrollado por Diego Esquivel</h4>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

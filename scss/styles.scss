@@ -1,0 +1,177 @@
+@import "utilities/variables";
+
+body{
+    .contenedor{
+        display: grid;
+        background-color: $color-principal;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "menu menu"
+        "contenido img";
+        justify-content: center;
+        align-items: center;
+        .menu{
+            grid-area: menu;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $color-principal;
+            padding: 10px;
+            .principal{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .menu__logo{
+                    img{
+                        height: 50px;
+                    }
+                }
+                nav{
+                    ul{
+                        justify-self:end;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        background-color: $color-principal;
+                        width: 35rem; 
+                        list-style: none;
+                        height:8vh;
+                        li:hover{
+                            background-color: $color-hover;
+                            padding: 15px;
+                            border-radius: 13px;
+                        }
+                        li{
+                            a{
+                                text-decoration: none;
+                                color: $color-secundario;
+                            }
+                        }
+                        .cotiza{
+                            padding: 10px 35px;
+                            background-color: $color-botones;
+                            border-radius: 25px;
+                        }
+                        .cotiza:hover{
+                            background-color: $color-hover;
+                            padding: 5px 30px;
+                            border-radius: 25px;
+                        }
+                    }
+                }
+            }
+            .navbar{
+                display: none;
+            }
+            .bg-nav{
+                background-color: $color-principal;
+            }
+        }
+        .portada{
+            grid-area: contenido;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-self: center;
+            color: $color-secundario;
+            div{
+                padding-top: 1.5rem;
+                grid-auto-flow: 5rem;
+                .portada__boton1{
+                    height: 3.5rem;
+                    width: 10rem;
+                    margin-right: 1rem;
+                    border-radius: 5rem;
+                    text-decoration: none;
+                    background-color: $color-botones;
+                    border: none;
+                    a{
+                        text-decoration: none;
+                        color: $color-secundario;
+                        font-size: 1.1rem;
+                    }
+                }
+                .portada__boton1 :hover{
+                    font-size: 1.3rem;
+                }
+                .portada__boton2{
+                    height: 3.5rem;
+                    width: 10rem;
+                    margin-left: 1rem;
+                    border-radius: 5rem;
+                    border: $color-secundario 3px solid;
+                    background-color: $color-principal;
+                    a{
+                        text-decoration: none;
+                        color: $color-secundario;
+                        font-size: 1.1rem;
+                    }
+                }
+                .portada__boton2 :hover{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .imagen{
+            grid-area: img;
+            img{
+                width:100%;
+            }
+        }
+    }
+    .proceso{
+        display: flex;
+        height: 350px;
+        justify-content:space-evenly;
+        align-items:center;
+        text-align: center;
+        div{
+            img{
+                width: 50px;
+            }
+            h3{
+                font-size: 16px;
+            }
+            p{
+                font-size: 14px;
+                width: 200px;
+            }
+        }
+    }
+    .boton{
+        display:flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+        button{
+            height: 3rem;
+            width: 10rem;
+            background-color:$color-botones;
+            border-radius: 1.5rem;
+            color: $color-secundario;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            a{
+                text-decoration: none;
+                color: $color-secundario;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .boton :hover{
+        font-size: 1.3rem;
+    }
+    footer{
+        background-color: $color-principal;
+        text-align: center;
+        h4{
+            color: $color-secundario;
+            font-size: 11px;
+            padding: 30px;
+        }
+    }
+    
+}
